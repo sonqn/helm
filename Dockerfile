@@ -1,5 +1,11 @@
 FROM alpine:3.18.2
 
+MAINTAINER Son Quach
+
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/sonqn/helm" \
+      org.label-schema.docker.dockerfile="/Dockerfile"
+
 ENV HELM_LATEST_VERSION v3.12.2
 ENV KUBE_LATEST_VERSION v1.26.0
 
